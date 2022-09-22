@@ -1,0 +1,83 @@
+html {
+	scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 62.4px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 52px;
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 41.6px;
+}
+
+h4 {
+  font-size: 1.5rem;
+  line-height: 33.6px;
+}
+
+h5 {
+  font-size: 1.25rem;
+  line-height: 28px;
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: 22.4px;
+}
+
+.scrollable {
+  overflow: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.shadow-custom {
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.container-fluid {
+  @apply lg:mx-auto;
+}
+
+// Q Table
+.q-table th {
+  font-size: 14px;
+}
+
+.q-table tbody td {
+  font-size: 14px;
+}
+
+// Upload Image
+.upload-banner, .upload-logo {
+  @apply flex flex-col p-4 rounded-md mb-7 cursor-pointer transition h-250px w-full;
+  border: 2px solid gainsboro;
+  border-style: dashed;
+
+  input {
+    display: none;
+  }
+
+  &--mobile {
+    @apply w-264px h-352px;
+  }
+
+  &--shipping {
+    @apply w-300px h-150px;
+  }
+
+  &:hover {
+    @apply border-coolGray-500;
+  }
+}
